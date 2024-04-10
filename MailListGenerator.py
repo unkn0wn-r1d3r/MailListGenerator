@@ -1,4 +1,4 @@
-def generate_email_from_file(file_path, domain="<add domain name here>"):
+def generate_email_from_file(file_path, domain):
     """
     Reads a file containing first and last names, generates email addresses
     by appending the last name with the first letter of the first name and
@@ -27,4 +27,5 @@ def generate_email_from_file(file_path, domain="<add domain name here>"):
 
 # Example usage
 file_path = "names.txt"  # Replace with your actual file path
-generate_email_from_file(file_path)
+domain=input("\n Domain name: ")
+generate_email_from_file(file_path,domain)
